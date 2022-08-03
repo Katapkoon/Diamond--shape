@@ -24,18 +24,13 @@ int main()
   }
   for(size = 1; size <= size_input - 1; size++)
   {
-    for(int space = 0; space != size; space++)
+    for(int space  = 1; space <= size; space++)
     {
       printf("-");
     }
-    for(symbol = 2*(size_input)- 2; symbol > 2*(size) - 1; symbol--)
+    for(symbol = 1; symbol < 2*(size_input - size) - 1; symbol++)
     {
       printf("*");
-    }
-    
-    for(int space = 0; space != size ; space++)
-    {
-      printf("-");
     }
     printf("\n");
   }
